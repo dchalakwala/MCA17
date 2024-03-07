@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">LIVE MEETING</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meet_text">Create and share the meeting code with others that you want to meet with.</string>
+</resources>
