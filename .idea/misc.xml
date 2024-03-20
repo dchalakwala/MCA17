@@ -11,11 +11,15 @@
         <entry key="..\:/LIVEMEETING/app/src/main/res/layout/activity_registration.xml" value="0.176" />
         <entry key="..\:/LIVEMEETING/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/drawable/bg_edittext.xml" value="0.1475" />
+        <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/drawable/ic_mic_off.xml" value="0.219" />
+        <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/drawable/ic_video_camera_off.xml" value="0.219" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_create_room.xml" value="0.25" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_joinmeeting.xml" value="0.264" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_start_meeting.xml" value="0.25" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/activity_tab_meeting.xml" value="0.25" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/fragment_calander.xml" value="0.25" />
         <entry key="..\:/MCA17_PROJECT/LIVEMEETING/app/src/main/res/layout/fragment_join.xml" value="0.2359375" />

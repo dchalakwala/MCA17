@@ -26,13 +26,13 @@
         android:inputType="text"
         android:layout_marginTop="20dp"/>
 
-    <EditText
-        android:id="@+id/n1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Meeting Name"
-        android:inputType="text"
-        android:layout_marginTop="20dp"/>
+<!--    <EditText-->
+<!--        android:id="@+id/n1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Meeting Name"-->
+<!--        android:inputType="text"-->
+<!--        android:layout_marginTop="20dp"/>-->
 
 <!--    <TextView-->
 <!--        android:layout_width="match_parent"-->

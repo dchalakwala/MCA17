@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,7 @@ public class LOGIN extends AppCompatActivity {
     private EditText username, password;
     private Button login;
     private SQLiteDatabase db;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +27,15 @@ public class LOGIN extends AppCompatActivity {
         username = findViewById(R.id.user);
         password = findViewById(R.id.p1);
         login = findViewById(R.id.b2);
+        textView = findViewById(R.id.reg);
 //        registerButton = findViewById(R.id.registerButton);
 
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LOGIN.this,REGISTRATION.class);
+            }
+        });
         // Creating or opening the database
         db = openOrCreateDatabase("UserDB", MODE_PRIVATE, null);
 
@@ -89,7 +98,7 @@ public class LOGIN extends AppCompatActivity {
                 }
 
 
-                Intent intent1=new Intent(LOGIN.this,JOINMEETING.class);
+                Intent intent1=new Intent(LOGIN.this,TAB_MEETING.class);
                 startActivity(intent1);
                 finish();
             }

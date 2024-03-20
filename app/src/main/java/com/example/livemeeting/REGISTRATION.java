@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,6 +16,7 @@ public class REGISTRATION extends AppCompatActivity {
     private EditText username, password,email,confirmpassword,address,mobilenumber;
     private Button registration;
     private SQLiteDatabase db;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,9 @@ public class REGISTRATION extends AppCompatActivity {
         address=findViewById(R.id.e4);
         mobilenumber=findViewById(R.id.e6);
         registration = findViewById(R.id.b1);
+
+
+
 
         // Creating or opening the database
         db = openOrCreateDatabase("UserDB", MODE_PRIVATE, null);
@@ -90,7 +95,7 @@ public class REGISTRATION extends AppCompatActivity {
                     }
 
                 }
-                Intent intent=new Intent(REGISTRATION.this,LOGIN.class);
+                Intent intent=new Intent(REGISTRATION.this,TAB_MEETING.class);
                 startActivity(intent);
                 finish();
             }

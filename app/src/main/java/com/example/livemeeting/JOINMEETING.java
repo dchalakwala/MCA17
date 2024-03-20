@@ -1,17 +1,14 @@
 package com.example.livemeeting;
 
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
-import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class JOINMEETING extends AppCompatActivity {
 
@@ -25,13 +22,13 @@ public class JOINMEETING extends AppCompatActivity {
         setContentView(R.layout.activity_joinmeeting);
 
         meetingid = findViewById(R.id.m1);
-        meetingname= findViewById(R.id.n1);
+//        meetingname= findViewById(R.id.n1);
         meetingpassword= findViewById(R.id.p1);
         join= findViewById(R.id.j1);
 
         db = openOrCreateDatabase("MeetingDB", MODE_PRIVATE, null);
 
-        db.execSQL("CREATE TABLE IF NOT EXISTS Meetings(MeetingID VARCHAR, MeetingName VARCHAR, MeetingPassword VARCHAR)");
+        db.execSQL("CREATE TABLE IF NOT EXISTS Meetings(MeetingID VARCHAR, MeetingPassword VARCHAR)");
         join.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,7 +36,7 @@ public class JOINMEETING extends AppCompatActivity {
 
 
                 String meetingId = meetingid.getText().toString().trim();
-                String meetingName = meetingname.getText().toString().trim();
+//                String meetingName = meetingname.getText().toString().trim();
                 String meetingPassword = meetingpassword.getText().toString().trim();
 //                joinMeeting();
 
@@ -48,9 +45,9 @@ public class JOINMEETING extends AppCompatActivity {
                 if (meetingId.isEmpty()) {
                     Toast.makeText(JOINMEETING.this, "Please enter a meetingId", Toast.LENGTH_SHORT).show();
                 } else {
-                    if (meetingName.isEmpty()) {
-                        Toast.makeText(JOINMEETING.this, "Please enter a meetingName", Toast.LENGTH_SHORT).show();
-                    }
+//                    if (meetingName.isEmpty()) {
+//                        Toast.makeText(JOINMEETING.this, "Please enter a meetingName", Toast.LENGTH_SHORT).show();
+//                    }
                     if (meetingPassword.isEmpty()) {
                         Toast.makeText(JOINMEETING.this, "Please enter a meetingPassword", Toast.LENGTH_SHORT).show();
                     }
@@ -77,15 +74,14 @@ public class JOINMEETING extends AppCompatActivity {
                         // Insert user data into the database
                         ContentValues values = new ContentValues();
                         values.put("meetingId", meetingId);
-                        values.put("meetingName", meetingName);
+//                        values.put("meetingName", meetingName);
                         values.put("meetingPassword", meetingPassword);
                         db.insert("meeting", null, values);
                         Toast.makeText(JOINMEETING.this, "Join a meeting Successfully......", Toast.LENGTH_SHORT).show();
                     }
                 }
 
-                Intent intent = new Intent(JOINMEETING.this, CREATE_ROOM.class);
-                startActivity(intent);
+
 
             }
         });

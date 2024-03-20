@@ -26,7 +26,8 @@
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:id="@+id/user">
+        android:id="@+id/user"
+        >
 
     </EditText>
     <!--        <EditText-->
@@ -110,6 +111,18 @@
 
 
     </Button>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Create Account? Registration"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/reg">
+
+    </TextView>
 
 
 
